@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/School-Form/Styles.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <h2 style="text-align: center;">FICHA DE MATRICULA</h2>
+
+    <form>
+        <fieldset>
+            <h3>Datos del estudiante</h3>
+            <hr>
+            <div class="input-group">
+                <label for="nombres_apellidos">Nombres y Apellidos<span style="color: red;">*</span></label><br>
+                <input type="text" id="nombres_apellidos" placeholder="Nombres" required>
+                <input type="text" id="nombres_apellidos" placeholder="Apellidos" required>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="input-group">
+                <label for="fecha_nacimiento">Fecha de nacimiento<span style="color: red;">*</span></label><br>
+                <div class="date-group">
+                    <input type="date" id="dob" name="dob">
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="input-group">
+                <label for="lugar_nacimiento">Lugar de nacimiento<span style="color: red;">*</span></label><br>
+                <input type="text" id="lugar_nacimiento" placeholder="lugar de nacimiento" required>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="input-group">
+                <label for="edad_actual">Años cumplidos<span style="color: red;">*</span></label><br>
+                <input type="text" id="edad_actual" placeholder="Edad actual" required>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="input-group">
+                <label for="direccion_domiciliaria">Direccion domiciliaria<span style="color: red;">*</span></label><br>
+                <input type="text" id="direccion_domiciliaria" placeholder="direccion de la calle" required>
+                <input type="text" id="direccion_domiciliaria" placeholder="Calle trasversal">
+                <input type="text" id="direccion_domiciliaria" placeholder="Numero de casa" required>
+                <input type="text" id="direccion_domiciliaria" placeholder="Barrio" required>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="input-group">
+                <label for="telefono_convencional">Telefono convencional</label><br>
+                <input type="tel" id="telefono" name="telefono" maxlength="10" placeholder="Numero opcional">
+            </div>
+
+            <br>
+            <br>
+
+            <div class="input-group">
+                <label for="numero_celular1">Numero celular 1<span style="color: red;">*</span></label><br>
+                <input type="tel" id="telefono" name="telefono" maxlength="10" placeholder="Numero celular" required>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="input-group">
+                <label for="numero_celular2">Numero celular 2</label><br>
+                <input type="tel" id="telefono" name="telefono" maxlength="10" placeholder="Numero celular">
+            </div>
+
+            <br>
+            <br>
+
+            <div class="input-group">
+                <label for="nacionalidad">Nacionalidad<span style="color: red;">*</span></label><br>
+                <input type="text" id="nacionalidad" placeholder="Nacionalidad" required>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="input-group">
+                <label for="peso">Peso en Kg</label><br>
+                <input type="number" id="peso" required>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="input-group">
+                <label for="talla">Talla en cm</label><br>
+                <input type="text" id="talla" required>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="input-group">
+                <label for="institucion">Institucion de la que procede</label><br>
+                <input type="text" id="institucion" placeholder="En caso de ser nuevo">
+            </div>
+
+            <br>
+            <br>
+
+            <div class="input-group">
+                <label for="escuela_direccion">Ciudad y direccion de la escuela de la que procede</label><br>
+                <input type="text" id="escuela_direccion" placeholder="En caso de ser nuevo">
+            </div><br>
+
+            <hr>
+            <br>
+
+            <h3>Datos Familiares</h3>
+            <hr>
+            <br>
+            <div class="input-group">
+                <label for="representantes">Nombres y Apellidos del representante<span
+                        style="color: red;">*</span></label><br>
+                <input type="text" id="representante" placeholder="Nombres" required>
+                <input type="text" id="representante" placeholder="Apellidos" required>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="input-group">
+                <label for="cedula">N° de Cédula de identidad<span style="color: red;">*</span></label><br>
+                <input type="number" id="cedula" name="cedula" maxlength="11" placeholder="Ingresa tu cédula" required>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="input-group">
+                <label for="parentesco">Parentesco con el niño<span style="color: red;">*</span></label><br>
+                <select id="parentesco" required>
+                    <option value="seleccione" selected="true" disabled="true">seleccione</option>
+                    <option value="padre">Padre</option>
+                    <option value="madre">Madre</option>
+                    <option value="tis">Tios</option>
+                    <option value="primo">primo</option>
+                    <option value="prima">Prima</option>
+                    <option value="hermano">Hermano</option>
+                    <option value="hermana">Hermana</option>
+                    <option value="abuela">Abuela</option>
+                    <option value="abuelo">Abuelo</option>
+                </select>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="input-group">
+                <label for="niño_vive">El niño vive con<span style="color: red;">*</span></label><br>
+                <select id="niño_vive" required>
+                    <option value="seleccione" selected="true" disabled="true">seleccione</option>
+                    <option value="padre">Padre</option>
+                    <option value="madre">Madre</option>
+                    <option value="otros_familiares">Otros familiares</option>
+                </select>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="input-group">
+                <label for="cual_familiar">Si es con otros familiares, escriba cuál<span
+                        style="color: red;">*</span></label><br>
+                <input type="text" id="cual_familiar">
+            </div>
+
+            <br>
+            <br>
+
+            <div class="input-group">
+                <label for="cantidad_familiar">Tamaño de la familia - Número de hijos<span
+                        style="color: red;">*</span></label><br>
+                <select id="cantidad_familiar" required>
+                    <option value="seleccione" selected="true" disabled="true">seleccione</option>
+                    <option value="hijo_unico">Hijo unico</option>
+                    <option value="2_3hijos">2 o 3 Hijos</option>
+                    <option value="4_5hijos">4 o 5 Hijos</option>
+                    <option value="6_mashijos">6 o mas Hijos</option>
+                </select>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="input-group">
+                <label for="situacion_economica">Situación económica del hogar<span
+                        style="color: red;">*</span></label><br>
+                <select id="situacion_economica" required>
+                    <option value="seleccione" selected="true" disabled="true">seleccione</option>
+                    <option value="muy_buena">Muy buena</option>
+                    <option value="buena">Buena</option>
+                    <option value="regular">Regular</option>
+                    <option value="mala">Mala</option>
+                </select>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="input-group">
+                <label for="vivienda">Vivienda<span style="color: red;">*</span></label><br>
+                <select id="vivienda" required>
+                    <option value="seleccione" selected="true" disabled="true">seleccione</option>
+                    <option value="muy_buena">Propia</option>
+                    <option value="prestada">Alquilada</option>
+                    <option value="prestada">Prestada</option>
+                </select>
+            </div>
+
+
+            <br>
+            <br>
+
+            <div class="input-group">
+                <label for="ocupación">Ocupación del representante<span style="color: red;">*</span></label><br>
+                <select id="ocupación" required>
+                    <option value="seleccione" selected="true" disabled="true">seleccione</option>
+                    <option value="publico">Empleado publico</option>
+                    <option value="privado">Empleado privado</option>
+                    <option value="autónomo">Autónomo</option>
+                    <option value="jubilado">Jubilado</option>
+                    <option value="no_trabaja">No trabaja</option>
+                </select>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="input-group">
+                <label for="nivel_academico"> Nivel de instrucción del representante <span
+                        style="color: red;">*</span></label><br>
+                <select id="nivel_academico" required>
+                    <option value="seleccione" selected="true" disabled="true">seleccione</option>
+                    <option value="analfabeto">Analfabeto</option>
+                    <option value="extraescolares">Solo estudios extraescolares</option>
+                    <option value="basica_incompleta">Básica incompleta</option>
+                    <option value="básica completa">Básica completa</option>
+                    <option value="bachillerato incompleto">Bachillerato incompleto</option>
+                    <option value="bachillerato completo">Bachillerato completo</option>
+                    <option value="superior incompleto">Superior incompleto</option>
+                    <option value="superior completo">Superior completo</option>
+                </select>
+            </div>
+
+            <br>
+            <br>
+            <hr>
+            <br>
+
+            <h3>Datos para la facturación de matriculas y pensiones</h3>
+            <hr>
+
+            <div class="input-group">
+                <label for="factura">¿A nombre de quién va la factura?<span style="color: red;">*</span></label><br>
+                <input type="text" id="factura" required>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="input-group">
+                <label for="correo_envio">Correo electrónico para enviar la factura<span
+                        style="color: red;">*</span></label><br>
+                <input type="text" id="correo_envio" placeholder="ejemplo@ejemplo.com" required>
+            </div>
+
+            <br>
+
+            <div class="input-group">
+                <label for="comprobante">Comprobante de pago matrícula<span style="color: red;">*</span></label><br>
+                <input type="file" id="comprobante" required>
+            </div>
+
+            <br>
+            <br>
+            <br>
+
+            <!--Boton de envio-->
+            <input type="submit" value="Enviar" />
+            <input type="reset" value="Limpiar" />
+
+            </div>
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
